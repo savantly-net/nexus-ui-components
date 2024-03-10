@@ -33,7 +33,7 @@ publish:
 
 
 .PHONY: release
-release: ensure-git-repo-pristine build bump-version publish
+release: ensure-git-repo-pristine build publish bump-version 
 	@echo "Preparing release..."
 	@echo "Version: $(VERSION)"
 	@echo "Commit: $(GIT_COMMIT)"
