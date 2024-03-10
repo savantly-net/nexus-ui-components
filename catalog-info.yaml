@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: nexus-ui-components
+  namespace: savantly
+  title: Nexus UI Components
+  description: UI Components for Nexus
+  annotations:
+    github.com/project-slug: github/savantly-net/nexus-ui-components
+  tags:
+    - react
+    - vite
+    - ui
+    - storybook
+  links:
+    - url: https://vercel.com/savantly/nexus-ui-components
+      title: Vercel Project
+      icon: dashboard
+    - url: https://nexus-ui-components.vercel.app/
+      title: Storybook
+      icon: book
+spec:
+  type: library
+  lifecycle: production
+  owner: savantly
