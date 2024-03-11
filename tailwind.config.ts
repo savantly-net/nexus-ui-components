@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from "tailwindcss/defaultTheme";
+import { nexusThemeConfig } from "./lib/components/nexusThemeConfig";
 
 export default {
   content: [
@@ -7,12 +9,12 @@ export default {
     "./lib/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        primary: ["Inter", ...defaultTheme.fontFamily.sans],
+      },
+      colors: nexusThemeConfig.colors,
+    },
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
-  daisyui: {
-    base: true,
-    styled: true,
-    utils: true,
-  },
+  plugins: [require("@tailwindcss/typography")],
 };

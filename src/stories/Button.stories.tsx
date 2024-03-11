@@ -34,6 +34,55 @@ export const Secondary: Story = {
   },
 };
 
+export const Tertiary: Story = {
+  args: {
+    children: "Button",
+    color: "tertiary",
+  },
+};
+
+export const Warning: Story = {
+  args: {
+    children: "Button",
+    color: "warning",
+  },
+};
+
+export const Danger: Story = {
+  args: {
+    children: "Button",
+    color: "danger",
+  },
+};
+
+export const Success: Story = {
+  args: {
+    children: "Button",
+    color: "success",
+  },
+};
+
+export const Info: Story = {
+  args: {
+    children: "Button",
+    color: "info",
+  },
+};
+
+export const Light: Story = {
+  args: {
+    children: "Button",
+    color: "light",
+  },
+};
+
+export const Dark: Story = {
+  args: {
+    children: "Button",
+    color: "dark",
+  },
+};
+
 export const Large: Story = {
   args: {
     children: "Button",

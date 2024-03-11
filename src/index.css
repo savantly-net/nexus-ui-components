@@ -1,1 +1,6 @@
-@import "../lib/main.module.css";
+@import "../lib/themes/cyan.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

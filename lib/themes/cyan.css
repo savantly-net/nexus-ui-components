@@ -1,0 +1,65 @@
+.nexus-cyan {
+
+    --tw-ring-color: rgba(6, 182, 212, 0.5);
+
+    --tw-color-primary: 6 182 212;
+    --color-primary: rgb(var(--tw-color-primary));
+
+    --tw-color-primary-text: 255 255 255;
+    --color-primary-text: rgb(var(--tw-color-primary-text));
+
+    --tw-color-secondary: 123 56 209;
+    --color-secondary: rgb(var(--tw-color-secondary));
+
+    --tw-color-secondary-text: 255 255 255;
+    --color-secondary-text: rgb(var(--tw-color-secondary-text));
+
+    --tw-color-tertiary: 241 103 7;
+    --color-tertiary: rgb(var(--tw-color-tertiary));
+
+    --tw-color-tertiary-text: 255 255 255;
+    --color-tertiary-text: rgb(var(--tw-color-tertiary-text));
+
+    --tw-color-neutral: 187 187 187;
+    --color-neutral: rgb(var(--tw-color-neutral));
+
+    --tw-color-neutral-text: 0 0 0;
+    --color-neutral-text: rgb(var(--tw-color-neutral-text));
+    
+    --tw-color-success: 6 214 6;
+    --color-success: rgb(var(--tw-color-success));
+
+    --tw-color-success-text: 255 255 255;
+    --color-success-text: rgb(var(--tw-color-success-text));
+
+    --tw-color-warning: 255 221 6;
+    --color-warning: rgb(var(--tw-color-warning));
+
+    --tw-color-warning-text: 0 0 0;
+    --color-warning-text: rgb(var(--tw-color-warning-text));
+
+    --tw-color-danger: 214 6 6;
+    --color-danger: rgb(var(--tw-color-danger));
+
+    --tw-color-danger-text: 255 255 255;
+    --color-danger-text: rgb(var(--tw-color-danger-text));
+
+    --tw-color-info: 6 103 241;
+    --color-info: rgb(var(--tw-color-info));
+
+    --tw-color-info-text: 255 255 255;
+    --color-info-text: rgb(var(--tw-color-info-text));
+
+    --tw-color-dark: 0 0 0;
+    --color-dark: rgb(var(--tw-color-dark));
+
+    --tw-color-dark-text: 255 255 255;
+    --color-dark-text: rgb(var(--tw-color-dark-text));
+
+    --tw-color-light: 255 255 255;
+    --color-light: rgb(var(--tw-color-light));
+
+    --tw-color-light-text: 0 0 0;
+    --color-light-text: rgb(var(--tw-color-light-text));
+
+  }
