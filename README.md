@@ -20,7 +20,7 @@ https://tailwindcss.com/
 Install the library  
 
 ```shell
-npm install --save @savantly/nexus-ui-components@0.0.8
+npm install --save @savantly/nexus-ui-components
 ```
 
 Import the default `css` variable file in your layout/index -  
