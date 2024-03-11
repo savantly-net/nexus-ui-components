@@ -23,7 +23,7 @@ Install the library
 npm install --save @savantly/nexus-ui-components
 ```
 
-Import the default `css` variable file in your layout/index -  
+Import the default `css` variable file in your layout/index (or copy/edit your own) -  
 
 ```shell
 import '@savantly/nexus-ui-components/dist/themes/nexus.css';
@@ -88,6 +88,12 @@ See [./lib/components/](./lib/components/)  for examples.
 The [./src/App.tsx](./src/App.tsx) can be used as a demo area for the components, but the React app is NOT published.  
 This project uses the Vite Library configuration to rollup a UI lib for consumption in other web applications.  
 
+
+## Custom Theme
+
+You can create a custom theme by copying the theme file and updating the color values.  
+
+[./src/themes/nexus.css](./src/themes/nexus.css)  
 
 
 ### Contributing 
