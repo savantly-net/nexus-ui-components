@@ -1,4 +1,4 @@
-@import "../lib/themes/cyan.css";
+@import "./themes/nexus.css";
 
 @tailwind base;
 @tailwind components;
