@@ -1,4 +1,6 @@
-// Components
-export * from "./components/layout/Shell";
 export * from "./components/nexusThemeConfig";
-export * from "./components/Button";
+
+// Components
+export * from "./components/button";
+export * from "./components/layout";
+export * from "./components/typography";
