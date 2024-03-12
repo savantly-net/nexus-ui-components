@@ -1,6 +1,6 @@
 import { classed } from "@tw-classed/react";
 
-export const Button = classed("button", "hover:shadow-lg", "active:shadow-inner",  {
+export const Button = classed("button", "active:shadow-inner",  {
   variants: {
     variant: {
       solid: "",
@@ -54,47 +54,47 @@ export const Button = classed("button", "hover:shadow-lg", "active:shadow-inner"
     {
       variant: "solid",
       color: "primary",
-      class: "text-primary-text bg-primary hover:bg-primary/80 focus:bg-primary/90",
+      class: "text-primary-text bg-primary hover:bg-primary-400 focus:bg-primary-400 hover:shadow-primary-400/50",
     },
     {
       variant: "solid",
       color: "secondary",
-      class: "text-secondary-text bg-secondary hover:bg-secondary/80 focus:bg-secondary/90",
+      class: "text-secondary-text bg-secondary hover:bg-secondary-400 focus:bg-secondary-400 hover:shadow-secondary-400/50",
     },
     {
       variant: "solid",
       color: "tertiary",
-      class: "text-tertiary-text bg-tertiary hover:bg-tertiary/80 focus:bg-tertiary/90",
+      class: "text-tertiary-text bg-tertiary hover:bg-tertiary-400 focus:bg-tertiary-400 hover:shadow-tertiary-400/50",
     },
     {
       variant: "solid",
       color: "success",
-      class: "text-success-text bg-success hover:bg-success/80 focus:bg-success/90",
+      class: "text-success-text bg-success hover:bg-success-400 focus:bg-success-400 hover:shadow-success-400/50",
     },
     {
       variant: "solid",
       color: "danger",
-      class: "text-danger-text bg-danger hover:bg-danger/80 focus:bg-danger/90",
+      class: "text-danger-text bg-danger hover:bg-danger-400 focus:bg-danger-400 hover:shadow-danger-400/50",
     },
     {
       variant: "solid",
       color: "warning",
-      class: "text-warning-text bg-warning hover:bg-warning/80 focus:bg-warning/90",
+      class: "text-warning-text bg-warning hover:bg-warning-400 focus:bg-warning-400 hover:shadow-warning-400/50",
     },
     {
       variant: "solid",
       color: "info",
-      class: "text-info-text bg-info hover:bg-info/80 focus:bg-info/90",
+      class: "text-info-text bg-info hover:bg-info-400 focus:bg-info-400 hover:shadow-info-400/50",
     },
     {
       variant: "solid",
       color: "light",
-      class: "text-light-text bg-light hover:bg-dark/20",
+      class: "text-light-text bg-light hover:bg-dark/10 focus:bg-dark/10 hover:shadow-dark/50",
     },
     {
       variant: "solid",
       color: "dark",
-      class: "text-dark-text bg-dark hover:bg-dark/80",
+      class: "text-dark-text bg-dark hover:bg-dark/80 focus:bg-dark/80 hover:shadow-dark/50",
     },
     {
       variant: "outline",
