@@ -1,85 +1,138 @@
 :root {
+  --tw-ring-color: rgba(6, 182, 212, 0.5);
 
-    --tw-ring-color: rgba(6, 182, 212, 0.5);
+  /* the color of text when using the neutral color as the background */
+  --tw-color-neutral-text: 0 0 0;
 
-    /* the primary color */
-    --tw-color-primary: 6 182 212;
-    --color-primary: rgb(var(--tw-color-primary));
+  /* the primary color */
+  --tw-color-primary: 6 182 212;
+  --tw-color-primary-50: 236 254 255;
+  --tw-color-primary-100: 207 250 254;
+  --tw-color-primary-200: 165 243 252;
+  --tw-color-primary-300: 103 232 249;
+  --tw-color-primary-400: 34 211 238;
+  --tw-color-primary-500: 6 182 212;
+  --tw-color-primary-600: 8 145 178;
+  --tw-color-primary-700: 14 116 144;
+  --tw-color-primary-800: 21 94 117;
+  --tw-color-primary-900: 22 78 99;
+  --tw-color-primary-950: 8 51 68;
 
-    /* the color of text when using the primary color as the background */
-    --tw-color-primary-text: 255 255 255;
-    --color-primary-text: rgb(var(--tw-color-primary-text));
+  /* the color of text when using the primary color as the background */
+  --tw-color-primary-text: 255 255 255;
 
-    /* the secondary color */
-    --tw-color-secondary: 123 56 209;
-    --color-secondary: rgb(var(--tw-color-secondary));
+  /* the secondary color */
+  --tw-color-secondary: 100 116 139;
+  --tw-color-secondary-50: 248 250 252;
+  --tw-color-secondary-100: 241 245 249;
+  --tw-color-secondary-200: 226 232 240;
+  --tw-color-secondary-300: 203 213 225;
+  --tw-color-secondary-400: 148 163 184;
+  --tw-color-secondary-500: 100 116 139;
+  --tw-color-secondary-600: 71 85 105;
+  --tw-color-secondary-700: 51 65 85;
+  --tw-color-secondary-800: 30 41 59;
+  --tw-color-secondary-900: 15 23 42;
+  --tw-color-secondary-950: 2 6 23;
 
-    /* the color of text when using the secondary color as the background */
-    --tw-color-secondary-text: 255 255 255;
-    --color-secondary-text: rgb(var(--tw-color-secondary-text));
+  /* the color of text when using the default secondary color as the background */
+  --tw-color-secondary-text: 255 255 255;
 
-    /* the tertiary color */
-    --tw-color-tertiary: 241 103 7;
-    --color-tertiary: rgb(var(--tw-color-tertiary));
+  /* the tertiary color */
+  --tw-color-tertiary: 217 70 239;
+  --tw-color-tertiary-50: 253 244 255;
+  --tw-color-tertiary-100: 250 232 255;
+  --tw-color-tertiary-200: 245 208 254;
+  --tw-color-tertiary-300: 240 171 252;
+  --tw-color-tertiary-400: 232 121 249;
+  --tw-color-tertiary-500: 217 70 239;
+  --tw-color-tertiary-600: 192 38 211;
+  --tw-color-tertiary-700: 162 28 175;
+  --tw-color-tertiary-800: 134 25 143;
+  --tw-color-tertiary-900: 112 26 117;
+  --tw-color-tertiary-950: 74 4 78;
 
-    /* the color of text when using the tertiary color as the background */
-    --tw-color-tertiary-text: 255 255 255;
-    --color-tertiary-text: rgb(var(--tw-color-tertiary-text));
+  /* the color of text when using the tertiary color as the background */
+  --tw-color-tertiary-text: 255 255 255;
 
-    /* the neutral color */
-    --tw-color-neutral: 187 187 187;
-    --color-neutral: rgb(var(--tw-color-neutral));
 
-    /* the color of text when using the neutral color as the background */
-    --tw-color-neutral-text: 0 0 0;
-    --color-neutral-text: rgb(var(--tw-color-neutral-text));
-    
-    /* the success color */
-    --tw-color-success: 6 214 6;
-    --color-success: rgb(var(--tw-color-success));
+  /* the success color */
+  --tw-color-success: 34 197 94;
+  --tw-color-success-50: 240 253 244;
+  --tw-color-success-100: 220 252 231;
+  --tw-color-success-200: 187 247 208;
+  --tw-color-success-300: 134 239 172;
+  --tw-color-success-400: 74 222 128;
+  --tw-color-success-500: 34 197 94;
+  --tw-color-success-600: 22 163 74;
+  --tw-color-success-700: 21 128 61;
+  --tw-color-success-800: 22 101 52;
+  --tw-color-success-900: 20 83 45;
+  --tw-color-success-950: 5 46 22;
 
-    /* the color of text when using the success color as the background */
-    --tw-color-success-text: 255 255 255;
-    --color-success-text: rgb(var(--tw-color-success-text));
+  /* the color of text when using the success color as the background */
+  --tw-color-success-text: 255 255 255;
 
-    /* the warning color */
-    --tw-color-warning: 255 221 6;
-    --color-warning: rgb(var(--tw-color-warning));
+  /* the warning color */
+  --tw-color-warning: 234 179 8;
+  --tw-color-warning-50: 254 252 232;
+  --tw-color-warning-100: 254 249 195;
+  --tw-color-warning-200: 254 240 138;
+  --tw-color-warning-300: 253 224 71;
+  --tw-color-warning-400: 250 204 21;
+  --tw-color-warning-500: 234 179 8;
+  --tw-color-warning-600: 202 138 4;
+  --tw-color-warning-700: 161 98 7;
+  --tw-color-warning-800: 133 77 14;
+  --tw-color-warning-900: 113 63 18;
+  --tw-color-warning-950: 66 32 6;
 
-    /* the color of text when using the warning color as the background */
-    --tw-color-warning-text: 0 0 0;
-    --color-warning-text: rgb(var(--tw-color-warning-text));
+  /* the color of text when using the warning color as the background */
+  --tw-color-warning-text: 0 0 0;
 
-    /* the danger color */
-    --tw-color-danger: 214 6 6;
-    --color-danger: rgb(var(--tw-color-danger));
+  /* the danger color */
+  --tw-color-danger: 239 68 68;
+  --tw-color-danger-50: 254 242 242;
+  --tw-color-danger-100: 254 226 226;
+  --tw-color-danger-200: 254 202 202;
+  --tw-color-danger-300: 252 165 165;
+  --tw-color-danger-400: 248 113 113;
+  --tw-color-danger-500: 239 68 68;
+  --tw-color-danger-600: 220 38 38;
+  --tw-color-danger-700: 185 28 28;
+  --tw-color-danger-800: 153 27 27;
+  --tw-color-danger-900: 127 29 29;
+  --tw-color-danger-950: 69 10 10;
 
-    /* the color of text when using the danger color as the background */
-    --tw-color-danger-text: 255 255 255;
-    --color-danger-text: rgb(var(--tw-color-danger-text));
+  /* the color of text when using the danger color as the background */
+  --tw-color-danger-text: 255 255 255;
 
-    /* the info color */
-    --tw-color-info: 6 103 241;
-    --color-info: rgb(var(--tw-color-info));
+  /* the info color */
+  --tw-color-info: 59 130 246;
+  --tw-color-info-50: 239 246 255;
+  --tw-color-info-100: 219 234 254;
+  --tw-color-info-200: 191 219 254;
+  --tw-color-info-300: 147 197 253;
+  --tw-color-info-400: 96 165 250;
+  --tw-color-info-500: 59 130 246;
+  --tw-color-info-600: 37 99 235;
+  --tw-color-info-700: 29 78 216;
+  --tw-color-info-800: 30 64 175;
+  --tw-color-info-900: 30 58 138;
+  --tw-color-info-950: 23 37 84;
 
-    /* the color of text when using the info color as the background */
-    --tw-color-info-text: 255 255 255;
-    --color-info-text: rgb(var(--tw-color-info-text));
+  /* the color of text when using the info color as the background */
+  --tw-color-info-text: 255 255 255;
 
-    /* the dark color */
-    --tw-color-dark: 0 0 0;
-    --color-dark: rgb(var(--tw-color-dark));
+  /* the dark color */
+  --tw-color-dark: 0 0 0;
 
-    /* the color of text when using the dark color as the background */
-    --tw-color-dark-text: 255 255 255;
-    --color-dark-text: rgb(var(--tw-color-dark-text));
+  /* the color of text when using the dark color as the background */
+  --tw-color-dark-text: 255 255 255;
 
-    /* the light color */
-    --tw-color-light: 255 255 255;
-    --color-light: rgb(var(--tw-color-light));
+  /* the light color */
+  --tw-color-light: 255 255 255;
 
-    /* the color of text when using the light color as the background */
-    --tw-color-light-text: 0 0 0;
-    --color-light-text: rgb(var(--tw-color-light-text));
-
-  }
+  /* the color of text when using the light color as the background */
+  --tw-color-light-text: 0 0 0;
+}
