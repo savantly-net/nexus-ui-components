@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Image } from "../../../../lib/components/content/image";
-import "../../../index.css";
-import { commonArgTypes } from "../../story-utils";
+import { Image } from "../../../lib/components";
+import "../../index.css";
+import { commonArgTypes } from "../story-utils";
 
 const meta: Meta = {
   title: "Content/Image",

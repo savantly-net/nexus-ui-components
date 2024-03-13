@@ -1,0 +1,59 @@
+# Nexus UI Components
+
+This is a collection of UI components for use in React projects.  
+It is built using [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/).  
+It uses Tailwind CSS for styling. 
+
+Read full documentation at the Github repository: [https://github.com/savantly-net/nexus-ui-components](https://github.com/savantly-net/nexus-ui-components)  
+
+
+Contributors are welcome!  
+
+## Quick start
+
+### Install the library  
+
+```shell
+npm install --save @savantly/nexus-ui-components
+```
+
+
+### Import the default `css` variable file in your layout/index (or copy/edit your own) -  
+
+```shell
+import '@savantly/nexus-ui-components/dist/themes/nexus.css';
+```
+
+
+### Import the color mapping in your Tailwind config -  
+
+```tsx
+/** @type {import('tailwindcss').Config} */
+import { nexusThemeConfig } from "@savantly/nexus-ui-components";
+
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: nexusThemeConfig.colors, // Add the color mapping
+    },
+  },
+};
+
+```
+
+
+### Import a component and use it -  
+
+```tsx
+import { Button } from '@savantly/nexus-ui-components';
+
+export const Page = () => {
+    return (
+        <Button>Test Button</Button>
+    )
+};
+```

@@ -30,7 +30,7 @@ import '@savantly/nexus-ui-components/dist/themes/nexus.css';
 ```
 
 Import the color mapping in your Tailwind config -  
-```typescript
+```tsx
 /** @type {import('tailwindcss').Config} */
 import { nexusThemeConfig } from "@savantly/nexus-ui-components";
 
@@ -51,7 +51,7 @@ export default {
 
 Import a component and use it -  
 
-```typescript
+```tsx
 import { Button } from '@savantly/nexus-ui-components';
 
 export const Page = () => {

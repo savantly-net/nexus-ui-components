@@ -1,4 +1,4 @@
-import { classed } from "@tw-classed/react";
+import { ComponentProps, classed } from "@tw-classed/react";
 
 export const Image = classed("img", {
   variants: {
@@ -34,3 +34,5 @@ export const Image = classed("img", {
     shadow: "none",
   },
 });
+
+export interface ImageProps extends ComponentProps<typeof Image> {}

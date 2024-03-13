@@ -19,9 +19,9 @@ export const Button = classed("button", "active:shadow-inner",  {
     },
     size: {
       sm: "p-1",
-      md: "p-3",
-      lg: "p-4",
-      xl: "p-6",
+      md: "p-3 text-md",
+      lg: "p-4 text-lg",
+      xl: "p-6 text-xl",
     },
     rounded: {
       none: "rounded-none",

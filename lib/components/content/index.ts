@@ -1,2 +1,3 @@
-export * from "./image";
-export * from "./mask";
+export * from "./HeroScreen";
+export * from "./Image";
+export * from "./Mask";

@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Centered, Heading } from "../../../../lib/components";
-import { Mask } from "../../../../lib/components";
-import "../../../index.css";
-import { commonArgTypes } from "../../story-utils";
+import { Centered, Heading } from "../../../lib/components";
+import { Mask } from "../../../lib/components";
+import "../../index.css";
+import { commonArgTypes } from "../story-utils";
 
 const meta: Meta = {
   title: "Content/Mask",
