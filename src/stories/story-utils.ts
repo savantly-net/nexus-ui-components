@@ -1,4 +1,10 @@
-import { colorOptions, roundedCornerOptions, shadowOptions, sizeOptions, transitionOptions } from "../../lib/components/types";
+import {
+  colorOptions,
+  roundedCornerOptions,
+  shadowOptions,
+  sizeOptions,
+  transitionOptions,
+} from "../../lib/main";
 
 export const commonArgTypes = {
   color: {
@@ -30,5 +36,12 @@ export const commonArgTypes = {
       type: "select",
     },
     options: transitionOptions,
+  },
+  opacity: {
+    control: {
+      type: "range",
+    },
+    min: 0,
+    max: 100,
   },
 };
