@@ -1,6 +1,6 @@
 import { ComponentProps, classed } from "@tw-classed/react";
 
-export const Image = classed("img", {
+const ClassedImage = classed("img", {
   variants: {
     rounded: {
       none: "rounded-none",
@@ -35,4 +35,8 @@ export const Image = classed("img", {
   },
 });
 
-export interface ImageProps extends ComponentProps<typeof Image> {}
+export interface ImageProps extends ComponentProps<typeof ClassedImage> {}
+
+export const Image = (props: ImageProps) => {
+  return <ClassedImage {...props} />;
+};
