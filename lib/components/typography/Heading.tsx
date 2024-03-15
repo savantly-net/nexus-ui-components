@@ -1,4 +1,5 @@
 import { classed } from "@tw-classed/react";
+import type { ComponentProps } from "react";
 
 export const Heading = classed("h1", {
   variants: {
@@ -27,3 +28,5 @@ export const Heading = classed("h1", {
     size: "md",
   },
 });
+
+export interface HeadingProps extends ComponentProps<typeof Heading> {}
