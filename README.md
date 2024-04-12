@@ -38,6 +38,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    'node_modules/@savantly/nexus-ui-components/dist/**/*.js',
   ],
   theme: {
     extend: {
