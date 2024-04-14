@@ -1,5 +1,5 @@
 import { classed } from "@tw-classed/react";
-import { ComponentProps } from "react";
+import { ComponentPropsWithoutRef } from "react";
 import { ColorType } from "../types";
 
 const ClassedMask = classed(
@@ -43,7 +43,7 @@ const defaultMaskProps = {
   color: "dark",
 };
 
-export interface MaskProps extends ComponentProps<typeof ClassedMask> {
+export type MaskProps = ComponentPropsWithoutRef<typeof ClassedMask> & {
   background: React.ReactNode;
   opacity?: number;
   color?: ColorType;

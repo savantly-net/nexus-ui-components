@@ -1,4 +1,5 @@
-import { ComponentProps, classed } from "@tw-classed/react";
+import { classed } from "@tw-classed/react";
+import { ComponentPropsWithoutRef } from "react";
 
 const ClassedImage = classed("img", {
   variants: {
@@ -35,7 +36,7 @@ const ClassedImage = classed("img", {
   },
 });
 
-export type ImageProps = ComponentProps<typeof ClassedImage>;
+export type ImageProps = ComponentPropsWithoutRef<typeof ClassedImage>;
 
 export const Image = (props: ImageProps) => {
   return <ClassedImage {...props} />;

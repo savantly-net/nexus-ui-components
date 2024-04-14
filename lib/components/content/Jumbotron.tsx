@@ -35,11 +35,12 @@ const ClassedJumbotron = classed.section({
   },
 });
 
-export interface JumbotronProps
-  extends React.ComponentPropsWithRef<typeof ClassedJumbotron> {
+export type JumbotronProps = React.ComponentPropsWithoutRef<
+  typeof ClassedJumbotron
+> & {
   backgroundImage?: ImageProps;
   backgroundMask?: MaskProps;
-}
+};
 
 export const Jumbotron = (props: JumbotronProps) => {
   const { backgroundImage, backgroundMask, children, ...rest } = props;
