@@ -35,7 +35,7 @@ const ClassedImage = classed("img", {
   },
 });
 
-export interface ImageProps extends ComponentProps<typeof ClassedImage> {}
+export type ImageProps = ComponentProps<typeof ClassedImage>;
 
 export const Image = (props: ImageProps) => {
   return <ClassedImage {...props} />;
