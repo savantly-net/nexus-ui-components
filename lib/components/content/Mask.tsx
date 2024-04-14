@@ -46,7 +46,7 @@ const defaultMaskProps = {
 export type MaskProps = ComponentPropsWithoutRef<typeof ClassedMask> & {
   background: React.ReactNode;
   opacity?: number;
-  color?: ColorType;
+  color?: ColorType | 'none';
 }
 
 export const Mask = (props: MaskProps) => {

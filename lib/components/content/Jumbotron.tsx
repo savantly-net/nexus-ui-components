@@ -39,7 +39,7 @@ export type JumbotronProps = React.ComponentPropsWithoutRef<
   typeof ClassedJumbotron
 > & {
   backgroundImage?: ImageProps;
-  backgroundMask?: MaskProps;
+  backgroundMask?: Omit<MaskProps, 'background'>;
 };
 
 export const Jumbotron = (props: JumbotronProps) => {
