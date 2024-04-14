@@ -8,8 +8,6 @@ export const themeDecorator: DecoratorFunction<
   { [x: string]: any }
 > = (Story: any) => {
   return (
-    <div>
-      <Story />
-    </div>
+    <Story />
   );
 };

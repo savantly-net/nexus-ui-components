@@ -1,4 +1,4 @@
-import "../lib/main.module.css";
+import "./index.css";
 import "./App.css";
 
 function App() {
