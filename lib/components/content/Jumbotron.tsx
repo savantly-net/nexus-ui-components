@@ -43,18 +43,18 @@ export type JumbotronProps = React.ComponentPropsWithoutRef<
 };
 
 export const Jumbotron = (props: JumbotronProps) => {
-  const { backgroundImage, backgroundMask, children, ...rest } = props;
+  const { backgroundImage, backgroundMask, children, className, ...rest } = props;
 
   const withBackground = backgroundImage && (
     <Mask
       rounded="none"
       {...backgroundMask}
-      className="h-full"
+      className={`h-full ${backgroundMask?.className}`}
       background={
         <Image
           rounded="none"
           {...backgroundImage}
-          className="object-cover h-full"
+          className={`object-cover h-full ${backgroundImage.className}`}
         />
       }
     >
@@ -63,6 +63,6 @@ export const Jumbotron = (props: JumbotronProps) => {
   );
 
   return (
-    <ClassedJumbotron {...rest}>{withBackground || children}</ClassedJumbotron>
+    <ClassedJumbotron className={className} {...rest}>{withBackground || children}</ClassedJumbotron>
   );
 };
