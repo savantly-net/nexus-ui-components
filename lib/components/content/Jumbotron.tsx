@@ -5,10 +5,10 @@ import { Mask, MaskProps } from "./Mask";
 const ClassedJumbotron = classed.section({
   variants: {
     size: {
-      sm: "mb-4 min-h-64",
-      md: "mb-8 min-h-96",
-      lg: "mb-12 min-h-128",
-      xl: "mb-16 min-h-144",
+      sm: "min-h-64",
+      md: "min-h-96",
+      lg: "min-h-128",
+      xl: "min-h-144",
       screen: "h-screen",
     },
     color: {
