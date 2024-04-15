@@ -21,11 +21,16 @@ export const Heading = classed("h1", {
       lg: "text-5xl p-5",
       xl: "text-6xl p-6",
     },
+    responsive: {
+      true: "xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl",
+      false: "",
+    }
   },
   compoundVariants: [],
   defaultVariants: {
     color: "primary",
     size: "md",
+    responsive: true,
   },
 });
 

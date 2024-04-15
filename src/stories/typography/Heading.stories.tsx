@@ -23,6 +23,7 @@ const meta = {
     children: "Example Heading",
     color: "primary",
     size: "xl",
+    responsive: false
   },
 } satisfies Meta<typeof Heading>;
 
@@ -32,4 +33,17 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {},
+};
+
+export const Secondary: Story = {
+  args: {
+    color: "secondary",
+  },
+};
+
+export const Responsive: Story = {
+  args: {
+    color: "dark",
+    responsive: true,
+  },
 };
