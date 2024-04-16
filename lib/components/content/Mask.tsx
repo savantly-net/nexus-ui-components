@@ -1,10 +1,10 @@
 import { classed } from "@tw-classed/react";
 import { ComponentPropsWithoutRef } from "react";
-import { ColorType } from "../types";
+import { ColorType, formatBGColor } from "../types";
 
 const ClassedMask = classed(
   "div",
-  "relative overflow-hidden bg-cover bg-no-repeat bg-center",
+  "relative overflow-hidden bg-cover bg-no-repeat",
   {
     variants: {
       rounded: {
@@ -38,23 +38,18 @@ const ClassedMask = classed(
   }
 );
 
-const defaultMaskProps = {
-  opacity: 50,
-  color: "dark",
-};
-
 export type MaskProps = ComponentPropsWithoutRef<typeof ClassedMask> & {
   background: React.ReactNode;
   opacity?: number;
-  color?: ColorType | 'none';
-}
+  color?: ColorType | "none" | string;
+};
 
 export const Mask = (props: MaskProps) => {
-  const { children, background, opacity, color, ...rest } = props;
+  const { children, background, opacity = 50, color = "dark", ...rest } = props;
   const Child = children || <div />;
 
-  const maskColorClassname = `bg-${color || defaultMaskProps.color}`;
-  const maskOpacityValue = (opacity || defaultMaskProps.opacity) / 100;
+  const maskColorClassname = formatBGColor(color);
+  const maskOpacityValue = opacity / 100;
 
   return (
     <ClassedMask {...rest}>
